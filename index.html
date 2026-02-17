@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TTMN:33</title>
+    <link rel="shortcut icon" href="/assets/img/icon.png">
+    <link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css">
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <style>
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 192, 203, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 90;
+        }
+
+        .dialog {
+            background-color: rgb(255, 178, 152);
+            font-size: 20pt;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #stopwatch {
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            text-align: center;
+            color: pink;
+            font-size: 24px;
+            margin-top: 5px;
+            position: absolute;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body class="demo-1 loading">
+    <main>
+        <div class="overlay" id="overlay">
+            <div class="dialog">
+                <h2>🎉 WELCOME 🎉</h2>
+                <button onclick="playMusic()">OK</button>
+            </div>
+        </div>
+        <audio id="music" src="/assets/music/music.mp3" preload="auto" muted loop></audio>
+        <div id="stopwatch"></div>
+    <script>
+        function updateDisplay() {
+            document.getElementById("stopwatch").innerText = "i love you";
+        }
+
+        // Gọi 1 lần là đủ
+        updateDisplay();
+    </script>
+
+        <div class="frame">
+        </div>
+        <div class="content">
+            <div class="grid">
+                <div class="grid__item pos-2">
+                    <div class="grid__item-img" style="background-image:url('/assets/img/img2.jpg');" class="hover"></div>
+                </div>
+                <div class="grid__item pos-3">
+                    <div class="grid__item-img" style="background-image:url('/assets/img/img3.jpg');" class="hover"></div>
+                </div>
+                <div class="grid__item pos-4">
+                    <div class="grid__item-img" style="background-image:url('/assets/img/img4.jpg');" class="hover"></div>
+                </div>
+                <div class="grid__item pos-1">
+                    <div class="grid__item-img" style="background-image:url('/assets/img/img1.jpg');" class="hover"></div>
+                </div>
+                <div class="grid__item pos-5">
+                    <div class="grid__item-img" style="background-image:url('/assets/img/img5.jpg');" class="hover"></div>
+                </div>
+                <div class="grid__item pos-6">
+                    <div class="grid__item-img" style="background-image:url('/assets/img/img6.jpg');" class="hover"></div>
+                </div>
+                <div class="grid__item pos-7">
+                    <div class="grid__item-img" style="background-image:url('/assets/img/img7.jpg');" class="hover"></div>
+                </div>
+                <div class="grid__item pos-8">
+                    <div class="grid__item-img" style="background-image:url('/assets/img/img8.jpg');" class="hover"></div>
+                </div>
+                <div class="grid__item pos-9">
+                    <div class="grid__item-img" style="background-image:url('/assets/img/img9.jpg');" class="hover"></div>
+                </div>
+                <div class="grid__item pos-10">
+                    <div class="grid__item-img" style="background-image:url('/assets/img/img10.jpg');" class="hover"></div>
+                </div>
+            </div>
+    </main>
+    <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
+        <circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
+    </svg>
+    <script src="/assets/script.js" defer></script>
+</body>
+
+</html>
